@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Authors: Junjie He jh1285, Ruimin Li rl751-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AlbumController">
+   <children>
+      <Label fx:id="AlbumName" alignment="CENTER" contentDisplay="CENTER" layoutX="386.0" layoutY="18.0" text="Album Name" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="127.0" layoutY="70.0" mnemonicParsing="false" onAction="#AddTapped" prefHeight="27.0" prefWidth="154.0" text="Add Photo" />
+      <Button layoutX="17.0" layoutY="15.0" mnemonicParsing="false" onAction="#backTapped" text="Back" />
+      <Button layoutX="819.0" layoutY="15.0" mnemonicParsing="false" onAction="#logoutTapped" text="Log Out" />
+      <TextField fx:id="CaptionTextField" alignment="CENTER" layoutX="41.0" layoutY="422.0" prefHeight="27.0" prefWidth="242.0" promptText="Caption" />
+      <Button layoutX="297.0" layoutY="422.0" mnemonicParsing="false" onAction="#updateCationTapped" text="Add or Update Photo Caption" />
+      <Button layoutX="127.0" layoutY="127.0" mnemonicParsing="false" onAction="#deleteTapped" prefHeight="27.0" prefWidth="154.0" text="Delete Photo" />
+      <TextField fx:id="NewAlbumNameTextField" alignment="CENTER" layoutX="41.0" layoutY="273.0" prefHeight="27.0" prefWidth="242.0" promptText="Target Album Name" />
+      <Button layoutX="293.0" layoutY="273.0" mnemonicParsing="false" onAction="#copyTapped" text="Copy to Target Album" />
+      <Button layoutX="432.0" layoutY="273.0" mnemonicParsing="false" onAction="#moveTapped" text="Move to Target Album" />
+      <Button layoutX="484.0" layoutY="97.0" mnemonicParsing="false" onAction="#LastPhotoTapped" text="Last Photo" />
+      <Button layoutX="483.0" layoutY="154.0" mnemonicParsing="false" onAction="#NextPhotoTapped" text="Next Photo" />
+      <Button layoutX="127.0" layoutY="182.0" mnemonicParsing="false" onAction="#showTapped" prefHeight="27.0" prefWidth="154.0" text="Show Photo Details" />
+      <Label layoutX="629.0" layoutY="19.0" text="Photo List">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview" layoutX="570.0" layoutY="56.0" prefHeight="537.0" prefWidth="316.0" />
+   </children>
+</Pane>

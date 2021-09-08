@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Authors: Junjie He jh1285, Ruimin Li rl751-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SearchController">
+   <children>
+      <Label layoutX="396.0" layoutY="14.0" text="Search">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backTapped" prefHeight="35.0" prefWidth="55.0" text="Back" />
+      <Label layoutX="21.0" layoutY="163.0" text="Search Result">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="54.0" text="Serch By Date:">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <TextField fx:id="minTime" alignment="CENTER" layoutX="140.0" layoutY="52.0" prefHeight="27.0" prefWidth="178.0" promptText="From(Format: 05/30/2017)" />
+      <Button fx:id="SearchByTime" layoutX="526.0" layoutY="52.0" mnemonicParsing="false" onAction="#searchByTimeTapped" text="Search by Date" />
+      <Label layoutX="26.0" layoutY="87.0" text="Search By single tag:">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <TextField fx:id="TagSingleName" alignment="CENTER" layoutX="193.0" layoutY="87.0" prefHeight="23.0" prefWidth="85.0" promptText="Tag Name" />
+      <Label layoutX="26.0" layoutY="120.0" text="Search By two tags:">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Button fx:id="SearchSingle" layoutX="395.0" layoutY="87.0" mnemonicParsing="false" onAction="#searchSingleTapped" text="Search by Single Tag" />
+      <Button fx:id="SearchConjunction" layoutX="592.0" layoutY="118.0" mnemonicParsing="false" onAction="#searchConjunctionTapped" text="Search  by Conjunctive" />
+      <TextField fx:id="maxTime" alignment="CENTER" layoutX="337.0" layoutY="52.0" prefHeight="27.0" prefWidth="178.0" promptText="To(Format: 06/30/2017)" />
+      <TextField fx:id="TagSingleValue" alignment="CENTER" layoutX="295.0" layoutY="87.0" prefHeight="23.0" prefWidth="85.0" promptText="Tag Value" />
+      <TextField fx:id="TagDoubleName1" alignment="CENTER" layoutX="193.0" layoutY="118.0" prefHeight="23.0" prefWidth="85.0" promptText="Tag Name" />
+      <TextField fx:id="TagDoubleValue1" alignment="CENTER" layoutX="295.0" layoutY="118.0" prefHeight="23.0" prefWidth="85.0" promptText="Tag Value" />
+      <TextField fx:id="TagDoubleName2" alignment="CENTER" layoutX="395.0" layoutY="118.0" prefHeight="23.0" prefWidth="85.0" promptText="Tag Name" />
+      <TextField fx:id="TagDoubleValue2" alignment="CENTER" layoutX="494.0" layoutY="118.0" prefHeight="23.0" prefWidth="85.0" promptText="Tag Value" />
+      <Button fx:id="SearchDisjunctive" layoutX="743.0" layoutY="118.0" mnemonicParsing="false" onAction="#searchDisjunctiveTapped" text="Search  by Disjunctive" />
+      <Button layoutX="835.0" layoutY="6.0" mnemonicParsing="false" onAction="#logoutTapped" text="Log Out" />
+      <TextField fx:id="NewAlbumName" alignment="CENTER" layoutX="202.0" layoutY="163.0" prefHeight="27.0" prefWidth="185.0" promptText="New Album Name" />
+      <Button fx:id="CreateNewAlbum" layoutX="495.0" layoutY="162.0" mnemonicParsing="false" onAction="#createNewAlbumtapped" text="Create New Album with Results" />
+      <TableView fx:id="FoundPhotoList" layoutX="10.0" layoutY="232.0" prefHeight="368.0" prefWidth="890.0" />
+   </children>
+</Pane>

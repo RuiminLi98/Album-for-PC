@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="lib" />
+  <library name="lib1">
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/src.zip" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx-swt.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.web.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.base.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.fxml.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.media.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.swing.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.controls.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.graphics.jar" />
+  </library>
+  <library name="lib">
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/src.zip" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx-swt.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.web.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.base.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.fxml.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.media.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.swing.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.controls.jar" />
+    <archive path="/Users/junjiehe/Desktop/javafx-sdk-13/lib/javafx.graphics.jar" />
+  </library>
+</eclipse-userlibraries>
+
